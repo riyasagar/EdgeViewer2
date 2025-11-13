@@ -8,7 +8,6 @@ A minimal Android project that performs **real-time edge detection** using:
 - **OpenGL ES 2.0** (Rendering)
 - **TypeScript Web Viewer** for displaying a processed sample frame
 
-Designed as part of an RnD Intern technical assessment.
 
 ---
 
@@ -18,27 +17,5 @@ Designed as part of an RnD Intern technical assessment.
 - Canny edge detection  
 - Output rendered using **OpenGL ES**  
 - Minimal TypeScript web viewer  
-
----
-
-## 🏗 Architecture
-```
-Camera → Java → JNI → C++ (OpenCV) → RGBA Output → OpenGL ES → Screen
-Web Viewer → Shows exported processed frame
-```
-
----
-
-## 📁 Project Structure
-```
-app/
- ├─ java/com/example/edgeviewer/     # MainActivity, GLRenderer, JNI wrapper
- ├─ cpp/                              # native-lib.cpp, CMakeLists
- ├─ jniLibs/                          # libopencv_java4.so for all ABIs
-web/
- ├─ index.html
- ├─ main.ts
- ├─ tsconfig.json
-```
 
 ---
